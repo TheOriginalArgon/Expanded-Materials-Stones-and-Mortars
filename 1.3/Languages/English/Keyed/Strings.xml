@@ -1,0 +1,21 @@
+<LanguageData>
+
+
+    <EM_CurrentlyDrying>Drying in {0}</EM_CurrentlyDrying>
+    <EM_CurrentlyRuining>Ruining in {0}</EM_CurrentlyRuining>
+    <EM_ResourceBelowSpot>This digging spot will yield {0}.</EM_ResourceBelowSpot>
+    <EM_ResourceGatherRate>Next portion in {0}.</EM_ResourceGatherRate>
+
+    <DEBUG_ReourceGathered>Resources gathered: {0}</DEBUG_ReourceGathered>
+    <EM_DiggingSpotCollapsed>A {0} has collapsed.</EM_DiggingSpotCollapsed>
+
+    <!-- DEBUG: DO NOT KEEP THIS HERE!!! -->
+    
+    <SM_InsertMeatDesc>Material to insert</SM_InsertMeatDesc>
+	<SM_StartInsertionMeat>Insert material</SM_StartInsertionMeat>
+	<SM_StartInsertionMeatDesc>Bring materials to the oven to start the process.</SM_StartInsertionMeatDesc>
+	<SM_CancelBringingMeat>Cancel bringing materials</SM_CancelBringingMeat>
+	<SM_CancelBringingMeatDesc>Cancel bringing materials to the oven.</SM_CancelBringingMeatDesc>
+
+
+</LanguageData>

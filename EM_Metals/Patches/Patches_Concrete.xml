@@ -1,0 +1,131 @@
+<Patch>
+
+  <!-- Change concrete mix recipes -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef [defName = "VMEu_MakeConcrete"]/ingredients</xpath>
+    <value>
+      <ingredients>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>EM_Cement</li>
+            </thingDefs>
+          </filter>
+          <count>30</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>EM_Sand</li>
+            </thingDefs>
+          </filter>
+          <count>20</count>
+        </li>
+      </ingredients>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef [defName = "VMEu_MakeConcrete"]/fixedIngredientFilter</xpath>
+    <value>
+      <fixedIngredientFilter>
+        <thingDefs>
+          <li>EM_Cement</li>
+          <li>EM_Sand</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef [defName = "VMEu_MakeBulkConcrete"]/ingredients</xpath>
+    <value>
+      <ingredients>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>EM_Cement</li>
+            </thingDefs>
+          </filter>
+          <count>120</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>EM_Sand</li>
+            </thingDefs>
+          </filter>
+          <count>80</count>
+        </li>
+      </ingredients>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef [defName = "VMEu_MakeBulkConcrete"]/fixedIngredientFilter</xpath>
+    <value>
+      <fixedIngredientFilter>
+        <thingDefs>
+          <li>EM_Cement</li>
+          <li>EM_Sand</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef [defName = "VMEu_MakeConcreteRockPowder"]/ingredients</xpath>
+    <value>
+      <ingredients>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>VMEu_RockPowder</li>
+            </thingDefs>
+          </filter>
+          <count>50</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>EM_Sand</li>
+            </thingDefs>
+          </filter>
+          <count>30</count>
+        </li>
+      </ingredients>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef [defName = "VMEu_MakeConcreteRockPowder"]/fixedIngredientFilter</xpath>
+    <value>
+      <fixedIngredientFilter>
+        <thingDefs>
+          <li>VMEu_RockPowder</li>
+          <li>EM_Sand</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+    </value>
+  </Operation>
+
+  <!-- Path again the floors, just in case -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TerrainDef [defName = "Concrete"]/costList</xpath>
+    <value>
+      <costList>
+        <EM_Cement>1</EM_Cement>
+      </costList>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/TerrainDef [defName = "PavedTile"]/costList</xpath>
+    <value>
+      <costList>
+        <EM_Cement>1</EM_Cement>
+        <EM_Sand>1</EM_Sand>
+      </costList>
+    </value>
+  </Operation>
+
+
+</Patch>

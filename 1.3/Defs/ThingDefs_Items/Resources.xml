@@ -1,0 +1,109 @@
+<Defs>
+
+
+    <!-- Sand -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_Sand</defName>
+        <label>sand</label>
+        <description>Bags of sand, a granular material composed mostly of finely divided rock and mineral particles. Sand is widely found on beaches and deserts.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Sandbags</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>0.2</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <!-- Cement -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_Cement</defName>
+        <label>cement</label>
+        <description>Bags of cement, a fine material mostly formed of a mixture of limestone and clay. Cement is one of mankind most massively used resource, and it can be combined with sand to make concrete, which is extremely useful to build walls and all types of structures.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Cement</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+            <Mass>0.7</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+
+    <!-- Mud -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_Mud</defName>
+        <label>mud</label>
+        <description>Mud composed basically of wet soil. Mud is a common primitive material widely used by tribals, and it can also be filtered to obtain clay, a much finer type of soil with increased plasticity and uses.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Mud</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>0.02</MarketValue>
+            <Mass>0.5</Mass>
+            <Flammability>0.1</Flammability>
+            <DeteriorationRate>0.2</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+
+    <!-- Clay -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_Clay</defName>
+        <label>clay</label>
+        <description>A natural soil material containing high amounts of clay. Clay is used due to its plasticity and its capacity to dry into a hard and brittle material when fired. It can be used to make pottery, art or bricks.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Clay</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>0.03</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0.1</Flammability>
+            <DeteriorationRate>0.2</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+
+</Defs>

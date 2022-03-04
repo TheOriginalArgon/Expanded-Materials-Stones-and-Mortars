@@ -1,0 +1,23 @@
+<Defs>
+
+    <JobDef>
+        <defName>EM_DigAtSpot</defName>
+        <driverClass>ExpandedMaterialsStones.JobDriver_DigAtSpot</driverClass>
+        <reportString>digging at TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <WorkGiverDef>
+        <defName>EM_Dig</defName>
+        <label>dig at digging spot</label>
+        <giverClass>ExpandedMaterialsStones.WorkGiver_DiggingSpot</giverClass>
+        <workType>Mining</workType>
+        <priorityInType>50</priorityInType>
+        <verb>dig</verb>
+        <gerund>digging</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+</Defs>

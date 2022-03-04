@@ -1,0 +1,51 @@
+<Patch>
+
+
+    <!-- Make sandbags be built with sand -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Sandbags"]</xpath>
+        <value>
+            <costList>
+                <EM_Sand>5</EM_Sand>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Sandbags"]/graphicData</xpath>
+        <value>
+            <color>(178, 161, 127)</color>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef [defName = "Sandbags"]/costStuffCount</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef [defName = "Sandbags"]/stuffCategories</xpath>
+    </Operation>
+
+    <!-- Concrete-made floors -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/TerrainDef [defName = "Concrete"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_Cement>1</EM_Cement>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/TerrainDef [defName = "PavedTile"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_Cement>1</EM_Cement>
+                <EM_Sand>1</EM_Sand>
+            </costList>
+        </value>
+    </Operation>
+
+
+</Patch>

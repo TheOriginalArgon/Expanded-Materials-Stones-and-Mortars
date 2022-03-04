@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<WorkGiverDef>
+    <defName>EM_DoBillsBrickOven</defName>
+    <label>fire bricks</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>85</priorityInType>
+    <fixedBillGiverDefs>
+      <li>EM_BrickOven</li>
+    </fixedBillGiverDefs>
+    <verb>fire</verb>
+    <gerund>firing at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+</Defs>

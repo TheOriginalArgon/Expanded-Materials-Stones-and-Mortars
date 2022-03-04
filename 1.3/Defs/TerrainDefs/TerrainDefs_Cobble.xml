@@ -1,0 +1,21 @@
+<Defs>
+
+    <TerrainDef ParentName="FloorBase">
+        <defName>EM_CobblePathway</defName>
+        <label>concrete pathway</label>
+        <renderPrecedence>230</renderPrecedence>
+        <description>A neat looking pathway made of concrete bricks.</description>
+        <texturePath>Terrain/EM_CobbleFloor_01</texturePath>
+        <statBases>
+          <WorkToBuild>500</WorkToBuild>
+        </statBases>
+        <costList>
+          <EM_Cobble>5</EM_Cobble>
+        </costList>
+        <designationHotKey>Misc8</designationHotKey>
+        <researchPrerequisites>
+          <li>Stonecutting</li>
+        </researchPrerequisites>
+      </TerrainDef>
+
+</Defs>

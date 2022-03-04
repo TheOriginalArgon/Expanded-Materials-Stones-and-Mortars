@@ -1,0 +1,43 @@
+<Defs>
+
+    <ExpandedMaterialsStones.TerrainResourceDef>
+        <defName>EM_TerrainResources_DiggingSpotNormal</defName>
+        <terrains>
+            <li>Soil</li>
+            <li>SoilRich</li>
+            <li>MossyTerrain</li>
+            <li>MarshyTerrain</li>
+            <li>Mud</li>
+            <li>Sand</li>
+            <li>SoftSand</li>
+        </terrains>
+        <resources>
+            <li>EM_Mud</li>
+            <li>EM_Mud</li>
+            <li>EM_Mud</li>
+            <li>EM_Mud</li>
+            <li>EM_Mud</li>
+            <li>EM_Sand</li>
+            <li>EM_Sand</li>
+        </resources>
+        <minChance>
+            <li>0.8</li>
+            <li>0.8</li>
+            <li>0.7</li>
+            <li>0.7</li>
+            <li>1</li>
+            <li>1</li>
+            <li>0.6</li>
+        </minChance>
+        <maxChance>
+            <li>1.8</li>
+            <li>1.9</li>
+            <li>1.6</li>
+            <li>1.8</li>
+            <li>2</li>
+            <li>2</li>
+            <li>2.2</li>
+        </maxChance>
+    </ExpandedMaterialsStones.TerrainResourceDef>
+
+</Defs>

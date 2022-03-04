@@ -1,0 +1,20 @@
+<Defs>
+
+
+    <ItemProcessor.CombinationDef>
+		<defName>EM_ClaysIntoBricks</defName>
+		<building>EM_BrickOven</building>
+		<isCategoryRecipe>false</isCategoryRecipe>
+		<items>
+			<li>EM_Clay</li>
+        </items>	
+		<amount>
+			<li>30</li>
+		</amount>
+		<result>EM_ClayBricks_Dry</result>	
+		<yield>30</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+        <singleTimeIfNotQualityIncreasing>1</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+</Defs>

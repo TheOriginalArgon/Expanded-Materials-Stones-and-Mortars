@@ -1,0 +1,35 @@
+<Defs>
+
+    <!-- <RecipeDef>
+        <defName>EM_Fire_ClayBricks</defName>
+        <label>fire clay bricks</label>
+        <description>Fire clay bricks to harden them and make them usable.</description>
+        <jobString>Firing clay bricks.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>EM_BrickOven</li>
+        </recipeUsers>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>EM_ClayBricks_Fresh</li>
+              </thingDefs>
+            </filter>
+            <count>30</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>EM_ClayBricks_Fresh</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+          <EM_ClayBricks_Dry>30</EM_ClayBricks_Dry>
+        </products>
+      </RecipeDef> -->
+
+</Defs>

@@ -1,0 +1,267 @@
+<Defs>
+
+
+  <!-- Bricks Making -->
+
+  <RecipeDef>
+    <defName>EM_MakeBricks_Mud</defName>
+    <label>make adobe bricks</label>
+    <description>Shape mud into bricks ready for drying.</description>
+    <jobString>Making adobe bricks.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workAmount>700</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EM_Mud</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EM_Mud</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_MudBricks_Fresh>15</EM_MudBricks_Fresh>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>EM_MakeBricks_Clay</defName>
+    <label>make clay bricks</label>
+    <description>Shape mud into bricks ready for drying.</description>
+    <jobString>Making clay bricks.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workAmount>700</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EM_Clay</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EM_Clay</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_ClayBricks_Fresh>15</EM_ClayBricks_Fresh>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>EM_MakeBricks_Concrete</defName>
+    <label>make concrete bricks</label>
+    <description>Shape cement and sand into concrete bricks.</description>
+    <jobString>Making concrete bricks.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workAmount>700</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EM_Sand</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EM_Cement</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EM_Sand</li>
+        <li>EM_Cement</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_ConcreteBricks>30</EM_ConcreteBricks>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>EM_MakeCobble</defName>
+    <label>make concrete pathway</label>
+    <description>Shape cement and sand into small concrete pathway.</description>
+    <jobString>Making concrete pathway.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workAmount>700</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EM_Sand</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EM_Cement</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EM_Sand</li>
+        <li>EM_Cement</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_Cobble>50</EM_Cobble>
+    </products>
+  </RecipeDef>
+
+
+  <!-- Filter Mud -->
+
+  <RecipeDef>
+    <defName>EM_FilterMud</defName>
+    <label>filter mud to obtain clay</label>
+    <description>Filter mud to obtain small amounts of clean clay.</description>
+    <jobString>Filtering mud.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workAmount>750</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EM_Mud</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>EM_Mud</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_Clay>10</EM_Clay>
+    </products>
+  </RecipeDef>
+
+
+  <!-- Clay from stone chunks -->
+
+  <RecipeDef>
+    <defName>EM_ClayFromChunks</defName>
+    <label>obtain clay from stone chunks</label>
+    <description>Smash stone chunks to obtain clay.</description>
+    <jobString>Obtaining clay from chunk.</jobString>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="ExpandedMaterialsStones.RecipeDefExtension">
+        <recipeTargetDef>EM_Clay</recipeTargetDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+
+  <!-- Cement from stone chunks -->
+
+  <RecipeDef>
+    <defName>EM_CementFromChunks</defName>
+    <label>obtain cement from stone chunks</label>
+    <description>Smash stone chunks to obtain cement.</description>
+    <jobString>Obtaining cement from chunk.</jobString>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="ExpandedMaterialsStones.RecipeDefExtension">
+        <recipeTargetDef>EM_Cement</recipeTargetDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+
+</Defs>

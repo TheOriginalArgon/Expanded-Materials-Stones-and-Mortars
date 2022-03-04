@@ -1,0 +1,278 @@
+<Defs>
+
+    <!-- Categories and Appearances -->
+
+    <StuffAppearanceDef>
+        <defName>EM_Bricky</defName>
+    </StuffAppearanceDef>
+
+    <StuffAppearanceDef>
+        <defName>EM_CleanBricky</defName>
+    </StuffAppearanceDef>
+
+    <StuffAppearanceDef>
+        <defName>EM_ConcreteBricky</defName>
+    </StuffAppearanceDef>
+
+    <StuffCategoryDef>
+        <defName>EM_Bricks</defName>
+        <label>bricks</label>
+        <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+        <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+        <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+    </StuffCategoryDef>
+
+    <!-- <ThingCategoryDef>
+        <defName>EM_Cobblestones</defName>
+        <label>cobblestones</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Things/Item/Resource/Cobblestone/Cobblestone_c</iconPath>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef> -->
+
+
+    <!-- Mud Bricks -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_MudBricks_Fresh</defName>
+        <label>fresh adobe bricks</label>
+        <description>Mud shaped into bricks. These are still fresh and need to dry before they can become usable. Hot temperatures make the drying faster, rain will destroy them, so be careful where you leave them.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/BricksMud_Fresh</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>0.02</MarketValue>
+            <Mass>0.5</Mass>
+            <Flammability>0.1</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <comps>
+            <li Class="ExpandedMaterialsStones.CompProperties_BrickDrying">
+                <daysToDryStart>3</daysToDryStart>
+                <daysToRuinStart>-0.5</daysToRuinStart>
+                <thingToTurnInto>EM_MudBricks_Dry</thingToTurnInto>
+                <thingToRuinInto>EM_Mud</thingToRuinInto>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_MudBricks_Dry</defName>
+        <label>adobe bricks</label>
+        <description>Mud shaped into bricks. Adobe bricks chip very easily and take some damage during rain, but are very resistant to fire and stupid cheap to make.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/BricksMud_Dry</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <statBases>
+            <MarketValue>0.05</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.5</Mass>
+            <Flammability>0.03</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>120</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>EM_Bricks</li>
+            </categories>
+            <commonality>0.5</commonality>
+            <color>(128, 110, 93)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <appearance>EM_Bricky</appearance>
+            <statFactors>
+                <MaxHitPoints>0.4</MaxHitPoints>
+                <Flammability>0.3</Flammability>
+                <WorkToMake>0.8</WorkToMake>
+                <WorkToBuild>0.8</WorkToBuild>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+
+    <!-- Clay Bricks -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_ClayBricks_Fresh</defName>
+        <label>fresh ceramic bricks</label>
+        <description>Clay shaped into bricks. These are still fresh and need to be fired in a brick oven in order to become usable. Clay is compact and dense, which makes these bricks not ruin faster when exposed to rain, however, they will deteriorate at a normal rate if left outside.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/BricksClay_Fresh</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <MarketValue>0.02</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0.05</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_ClayBricks_Dry</defName>
+        <label>ceramic bricks</label>
+        <description>Clay shaped into bricks. Clay bricks are strong and resistant, plus they make fairly pretty walls, and are cheaper and quicker than stone blocks.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/BricksClay_Dry</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <statBases>
+            <MarketValue>0.05</MarketValue>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <Flammability>0.02</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>120</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>EM_Bricks</li>
+            </categories>
+            <commonality>0.5</commonality>
+            <color>(179, 113, 102)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <appearance>EM_CleanBricky</appearance>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints>
+                <Flammability>0.3</Flammability>
+                <WorkToMake>0.8</WorkToMake>
+                <WorkToBuild>0.8</WorkToBuild>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+
+    <!-- Concrete Bricks -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_Cobble</defName>
+        <label>concrete pathway</label>
+        <description>Small concrete bricks made of cement and sand. These bricks are widely used to make neat pathways with different styles and designs.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/CobblePathway</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <statBases>
+            <MarketValue>0.3</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>0.7</Mass>
+            <Flammability>0.01</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>100</minRewardCount>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_ConcreteBricks</defName>
+        <label>concrete bricks</label>
+        <description>Big bricks made of cement and sand. Walls made of these bricks are built faster and are stronger than normal clay brick walls, but they are quite ugly actually.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/ConcreteBricks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <statBases>
+            <MarketValue>0.2</MarketValue>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Mass>0.7</Mass>
+            <Flammability>0.01</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>false</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>120</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>EM_Bricks</li>
+            </categories>
+            <commonality>0.5</commonality>
+            <color>(152, 153, 147)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <appearance>EM_ConcreteBricky</appearance>
+            <statFactors>
+                <Beauty>-0.2</Beauty>
+                <MaxHitPoints>0.7</MaxHitPoints>
+                <Flammability>0.1</Flammability>
+                <WorkToMake>0.5</WorkToMake>
+                <WorkToBuild>0.5</WorkToBuild>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+
+</Defs>

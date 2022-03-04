@@ -1,0 +1,73 @@
+<Patch>
+
+    <!-- Appearances -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/uiIconPathsStuff</xpath>
+        <value>
+            <li>
+                <appearance>EM_Cobbly</appearance>
+                <iconPath>Things/Building/Linked/Wall/Wall_Cobbly_MenuIcon</iconPath>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/uiIconPathsStuff</xpath>
+        <value>
+            <li>
+                <appearance>EM_Bricky</appearance>
+                <iconPath>Things/Building/Linked/Wall/Wall_Bricky_MenuIcon</iconPath>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/uiIconPathsStuff</xpath>
+        <value>
+            <li>
+                <appearance>EM_CleanBricky</appearance>
+                <iconPath>Things/Building/Linked/Wall/Wall_CleanBricky_MenuIcon</iconPath>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/uiIconPathsStuff</xpath>
+        <value>
+            <li>
+                <appearance>EM_ConcreteBricky</appearance>
+                <iconPath>Things/Building/Linked/Wall/Wall_ConcreteBricky_MenuIcon</iconPath>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Add ticker type -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/tickerType</xpath>
+        <value>
+            <tickerType>Rare</tickerType>
+        </value>
+    </Operation>
+
+    <!-- StuffDef -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/stuffCategories</xpath>
+        <value>
+            <li>EM_Cobblestony</li>
+            <li>EM_Bricks</li>
+        </value>
+    </Operation>
+
+
+    <!-- Add comp to walls -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/comps</xpath>
+        <value>
+            <li Class="ExpandedMaterialsStones.CompProperties_TakeDamageFromWeather">
+                <damageRate>0.1</damageRate>
+                <weather>Rain</weather>
+                <indifferentToRoofing>true</indifferentToRoofing>
+
+                <buildingThing>EM_MudBricks_Dry</buildingThing>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

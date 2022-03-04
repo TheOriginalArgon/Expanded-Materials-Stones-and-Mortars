@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>EM_BrickOvenFirstItem</defName>
+		<building>EM_BrickOven</building>
+		<slot>1</slot>
+		<items>			
+			<li>EM_Clay</li>			
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+</Defs>

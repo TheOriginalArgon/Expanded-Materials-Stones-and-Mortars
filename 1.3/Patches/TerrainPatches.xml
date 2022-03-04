@@ -1,0 +1,58 @@
+<Patch>
+
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef [defName = "Mud" or defName = "Sand" or defName = "SoilRich" or defName = "Soil" or defName = "SoftSand" or defName = "MossyTerrain" or defName = "MarshyTerrain"]/affordances</xpath>
+        <value>
+            <li>EM_Diggable</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef [defName = "FlagstoneSandstone"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneSandstone>4</EM_CobblestoneSandstone>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef [defName = "FlagstoneGranite"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneGranite>4</EM_CobblestoneGranite>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef [defName = "FlagstoneLimestone"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneLimestone>4</EM_CobblestoneLimestone>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef [defName = "FlagstoneSlate"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneSlate>4</EM_CobblestoneSlate>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef [defName = "FlagstoneMarble"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_CobblestoneMarble>4</EM_CobblestoneMarble>
+                    </costList>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+
+</Patch>

@@ -1,0 +1,61 @@
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Materials - Metals</li>
+        </mods>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+
+                <!-- <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>/Defs/ThingDef [not(minifiedDef[text()="MinifiedThing"])]/costList/Steel</xpath>
+                <success>Normal</success>
+            </li>
+            <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                <xpath>/Defs/ThingDef [not(minifiedDef[text()="MinifiedThing"])]/costList/Steel</xpath>
+                <percentage>40</percentage>
+                <material>EM_Cement</material>
+                <changePrevMaterial>true</changePrevMaterial>
+                <newMaterial>EM_Sand</newMaterial>
+            </li>
+        </operations>
+    </Operation> -->
+
+                <li Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef [not(minifiedDef[text()="MinifiedThing"])]/costList/Steel</xpath>
+                            <success>Normal</success>
+                        </li>
+                        <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                            <xpath>/Defs/ThingDef [not(minifiedDef[text()="MinifiedThing"])]/costList/Steel</xpath>
+                            <percentage>60</percentage>
+                            <material>EM_Cement</material>
+                            <changePrevMaterial>false</changePrevMaterial>
+                            <minimum>100</minimum>
+                        </li>
+                    </operations>
+                </li>
+
+                <li Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef [not(minifiedDef[text()="MinifiedThing"])]/costList/EM_Cement</xpath>
+                            <success>Normal</success>
+                        </li>
+                        <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                            <xpath>/Defs/ThingDef [not(minifiedDef[text()="MinifiedThing"])]/costList/EM_Cement</xpath>
+                            <percentage>60</percentage>
+                            <material>EM_Sand</material>
+                            <changePrevMaterial>false</changePrevMaterial>
+                        </li>
+                    </operations>
+                </li>
+            </operations>
+
+        </nomatch>
+    </Operation>
+
+</Patch>

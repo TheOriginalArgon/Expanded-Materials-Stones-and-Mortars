@@ -1,0 +1,470 @@
+<Defs>
+
+    <!-- ================ Basalt ================ -->
+
+    <ThingDef ParentName="UglyRockBase" Name="EM_BasaltBase">
+        <defName>EM_Basalt</defName>
+        <label>basalt</label>
+        <description>A very hard igneous rock.</description>
+        <graphicData>
+            <color>(65,62,67)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>800</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>EM_ChunkBasalt</mineableThing>
+            <mineableDropChance>0.25</mineableDropChance>
+            <smoothedThing>EM_SmoothedBasalt</smoothedThing>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_BasaltBase">
+        <defName>EM_SmoothedBasalt</defName>
+        <label>smoothed granite</label>
+        <description>A very hard igneous rock. The shining surface is filled with a mosaic of green, white, and pink speckles.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>20</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+            <smoothedThing />
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+
+    <ThingDef ParentName="ChunkRockBase">
+        <defName>EM_ChunkBasalt</defName>
+        <label>basalt chunk</label>
+        <graphicData>
+            <color>(65,62,67)</color>
+        </graphicData>
+        <statBases>
+            <Mass>25</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+            <EM_BlocksBasalt>20</EM_BlocksBasalt>
+        </butcherProducts>
+        <modExtensions>
+            <li Class="ExpandedMaterialsStones.ThingDefExtension">
+                <resources>
+                    <li>EM_Clay</li>
+                    <li>EM_Cement</li>
+                </resources>
+                <amount>
+                    <li>1</li>
+                    <li>30</li>
+                </amount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="StoneBlocksBase">
+        <defName>EM_BlocksBasalt</defName>
+        <label>basalt blocks</label>
+        <description>Blocks of solid basalt. Basalt is a very hard stone.</description>
+        <graphicData>
+            <color>(65,62,67)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.25</Mass>
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <color>(65,62,67)</color>
+            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>basalt</stuffAdjective>
+            <statFactors>
+                <MaxHitPoints>1.6</MaxHitPoints>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="MakeStoneBlocksBase">
+        <defName>EM_Make_StoneBlocksBasalt</defName>
+        <label>make basalt blocks</label>
+        <description>Cuts basalt chunks into usable blocks.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkBasalt</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkBasalt</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_BlocksBasalt>20</EM_BlocksBasalt>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Shale ================ -->
+
+    <ThingDef ParentName="UglyRockBase" Name="EM_ShaleBase">
+        <defName>EM_Shale</defName>
+        <label>shale</label>
+        <description>A sedimentary rock composed mostly of mud, clay and quartz.</description>
+        <graphicData>
+            <color>(138,142,170)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>EM_ChunkShale</mineableThing>
+            <mineableDropChance>0.25</mineableDropChance>
+            <smoothedThing>EM_SmoothedShale</smoothedThing>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_ShaleBase">
+        <defName>EM_SmoothedShale</defName>
+        <label>smoothed shale</label>
+        <description>A sedimentary rock composed mostly of mud, clay and quartz. The thin layers expose clean shapes and tones of blue and gray.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>18</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+            <smoothedThing />
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+
+    <ThingDef ParentName="ChunkRockBase">
+        <defName>EM_ChunkShale</defName>
+        <label>shale chunk</label>
+        <graphicData>
+            <color>(138,142,170)</color>
+        </graphicData>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+            <EM_BlocksShale>20</EM_BlocksShale>
+        </butcherProducts>
+        <modExtensions>
+            <li Class="ExpandedMaterialsStones.ThingDefExtension">
+                <resources>
+                    <li>EM_Clay</li>
+                    <li>EM_Cement</li>
+                </resources>
+                <amount>
+                    <li>60</li>
+                    <li>40</li>
+                </amount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="StoneBlocksBase">
+        <defName>EM_BlocksShale</defName>
+        <label>shale blocks</label>
+        <description>Blocks of solid shale. Shale is a relatively soft rock and chips easily.</description>
+        <graphicData>
+            <color>(138,142,170)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+            <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <color>(138,142,170)</color>
+            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>shale</stuffAdjective>
+            <statFactors>
+                <Beauty>1.1</Beauty>
+                <MaxHitPoints>1.4</MaxHitPoints>
+                <WorkToBuild>5.0</WorkToBuild>
+                <WorkToMake>1.1</WorkToMake>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="MakeStoneBlocksBase">
+        <defName>EM_Make_StoneBlocksShale</defName>
+        <label>make shale blocks</label>
+        <description>Cuts shale chunks into usable blocks.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkShale</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkShale</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_BlocksShale>20</EM_BlocksShale>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Siltstone ================ -->
+
+    <ThingDef ParentName="UglyRockBase" Name="EM_SiltstoneBase">
+        <defName>EM_Siltstone</defName>
+        <label>siltstone</label>
+        <description>A sedimentary rock composed mostly of silt and small amounts of clay.</description>
+        <graphicData>
+            <color>(179,127,100)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>EM_ChunkSiltstone</mineableThing>
+            <mineableDropChance>0.25</mineableDropChance>
+            <smoothedThing>EM_SmoothedSiltstone</smoothedThing>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="EM_SiltstoneBase">
+        <defName>EM_SmoothedSiltstone</defName>
+        <label>smoothed siltstone</label>
+        <description>A sedimentary rock composed mostly of silt and small amounts of clay. The surface exposes a smooth plain orangeish surface.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>18</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+            <smoothedThing />
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+
+    <ThingDef ParentName="ChunkRockBase">
+        <defName>EM_ChunkSiltstone</defName>
+        <label>siltstone chunk</label>
+        <graphicData>
+            <color>(179,127,100)</color>
+        </graphicData>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+            <EM_BlocksSiltstone>20</EM_BlocksSiltstone>
+        </butcherProducts>
+        <modExtensions>
+            <li Class="ExpandedMaterialsStones.ThingDefExtension">
+                <resources>
+                    <li>EM_Clay</li>
+                    <li>EM_Cement</li>
+                </resources>
+                <amount>
+                    <li>10</li>
+                    <li>30</li>
+                </amount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="StoneBlocksBase">
+        <defName>EM_BlocksSiltstone</defName>
+        <label>siltstone blocks</label>
+        <description>Blocks of solid siltstone. Siltstone is a relatively soft rock and chips easily.</description>
+        <graphicData>
+            <color>(179,127,100)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <color>(179,127,100)</color>
+            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>siltstone</stuffAdjective>
+            <statFactors>
+                <Beauty>1.1</Beauty>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <WorkToBuild>5.2</WorkToBuild>
+                <WorkToMake>1.2</WorkToMake>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+    </ThingDef>
+
+    <RecipeDef ParentName="MakeStoneBlocksBase">
+        <defName>EM_Make_StoneBlocksSiltstone</defName>
+        <label>make siltstone blocks</label>
+        <description>Cuts siltstone chunks into usable blocks.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkSiltstone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkSiltstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_BlocksSiltstone>20</EM_BlocksSiltstone>
+        </products>
+    </RecipeDef>
+
+    <!-- ================ Schist ================ -->
+
+    <ThingDef ParentName="UglyRockBase" Name="EM_SchistBase">
+        <defName>EM_Schist</defName>
+        <label>schist</label>
+        <description>A white metamorphic rock. Its scaly texture is due to the high concentration of platy minerals.</description>
+        <graphicData>
+          <color>(224,228,222)</color>
+        </graphicData>
+        <statBases>
+          <MaxHitPoints>500</MaxHitPoints>
+        </statBases>
+        <building>
+          <mineableThing>EM_ChunkSchist</mineableThing>
+          <mineableDropChance>0.25</mineableDropChance>
+          <smoothedThing>EM_SmoothedSchist</smoothedThing>
+        </building>
+        
+      </ThingDef>
+    
+      <ThingDef ParentName="EM_SchistBase">
+        <defName>EM_SmoothedSchist</defName>
+        <label>smoothed schist</label>
+        <description>A white metamorphic rock. Its scaly texture is due to the high concentration of platy minerals. The polished surface exposes layers of platy micas and graphite.</description>
+        <graphicData>
+          <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+        </graphicData>
+        <statBases>
+          <Beauty>1</Beauty>
+          <MarketValue>20</MarketValue>
+        </statBases>
+        <building>
+          <isNaturalRock>false</isNaturalRock>
+          <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+          <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+          <smoothedThing />
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+      </ThingDef>
+      
+      <ThingDef ParentName="ChunkRockBase">
+        <defName>EM_ChunkSchist</defName>
+        <label>schist chunk</label>
+        <graphicData>
+          <color>(224,228,222)</color>
+        </graphicData>
+        <statBases>
+          <Mass>18</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+          <EM_BlocksSchist>20</EM_BlocksSchist>
+        </butcherProducts>
+        <modExtensions>
+            <li Class="ExpandedMaterialsStones.ThingDefExtension">
+                <resources>
+                    <li>EM_Clay</li>
+                    <li>EM_Cement</li>
+                </resources>
+                <amount>
+                    <li>15</li>
+                    <li>40</li>
+                </amount>
+            </li>
+        </modExtensions>
+      </ThingDef>
+    
+      <ThingDef ParentName="StoneBlocksBase">
+        <defName>EM_BlocksSchist</defName>
+        <label>schist blocks</label>
+        <description>Blocks of solid schist. A grainy-looking white rock that chips easily.</description>
+        <graphicData>
+          <color>(224,228,222)</color>
+        </graphicData>
+        <statBases>
+          <Mass>0.9</Mass>
+        </statBases>
+        <stuffProps>
+          <color>(224,228,222)</color>
+          <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+          <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+          <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+          <stuffAdjective>schist</stuffAdjective>
+          <statFactors>
+            <Beauty>1.2</Beauty>
+            <MaxHitPoints>1.3</MaxHitPoints>
+          </statFactors>
+          <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+      </ThingDef>
+    
+      <RecipeDef ParentName="MakeStoneBlocksBase">
+        <defName>EM_Make_StoneBlocksSchist</defName>
+        <label>make schist blocks</label>
+        <description>Cuts schist chunks into usable blocks.</description>
+        <ingredients>
+          <li>
+            <filter>
+              <thingDefs>
+                <li>EM_ChunkSchist</li>
+              </thingDefs>
+            </filter>
+            <count>1</count>
+          </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          <thingDefs>
+            <li>EM_ChunkSchist</li>
+          </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+          <EM_BlocksSchist>20</EM_BlocksSchist>
+        </products>
+      </RecipeDef>
+
+</Defs>
