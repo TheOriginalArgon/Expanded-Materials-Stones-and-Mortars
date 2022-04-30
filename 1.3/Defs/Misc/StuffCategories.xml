@@ -1,5 +1,19 @@
 <Defs>
 
-    
+    <StuffCategoryDef>
+        <defName>EM_Cobblestony</defName>
+        <label>cobblestony</label>
+        <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+        <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+        <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+    </StuffCategoryDef>
+
+    <StuffCategoryDef>
+        <defName>EM_Sculpture</defName>
+        <label>sculpture</label>
+        <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+        <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+        <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+    </StuffCategoryDef>
 
 </Defs>

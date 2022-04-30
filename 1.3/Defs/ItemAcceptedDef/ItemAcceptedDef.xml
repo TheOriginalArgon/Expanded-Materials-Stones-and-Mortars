@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<!-- Brick Oven -->
 
 	<ItemProcessor.ItemAcceptedDef>
 		<defName>EM_BrickOvenFirstItem</defName>
 		<building>EM_BrickOven</building>
+		<slot>1</slot>
+		<items>			
+			<li>EM_Clay</li>			
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+
+
+	<!-- Kiln -->
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>EM_PorcelainOvenFirstItem</defName>
+		<building>EM_PorcelainOven</building>
 		<slot>1</slot>
 		<items>			
 			<li>EM_Clay</li>			

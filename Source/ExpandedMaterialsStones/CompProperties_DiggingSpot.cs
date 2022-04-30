@@ -21,11 +21,11 @@ namespace ExpandedMaterialsStones
 
     public class CompDiggingSpot : ThingComp
     {
-		public float portionProgress;
+        public float portionProgress;
 
         public float delay = 700f;
 
-		public int lastUsedTick = -99999;
+        public int lastUsedTick = -99999;
 
         public bool exhausted = false;
 
@@ -34,6 +34,24 @@ namespace ExpandedMaterialsStones
         public CompProperties_DiggingSpot Props => (CompProperties_DiggingSpot)props;
 
         public TerrainResourceDef terrainResources => Props.terrainResources;
+
+        private bool IsNextToWaterTile()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                IntVec3 c = parent.Position + GenAdj.CardinalDirections[i];
+                if (!c.InBounds(parent.Map))
+                {
+                    continue;
+                }
+                TerrainDef terrain = parent.Map.terrainGrid.TerrainAt(c);
+                if (terrain.IsWater)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         public override void PostExposeData()
         {
@@ -52,16 +70,16 @@ namespace ExpandedMaterialsStones
         }
 
         public void DigWorkDone(Pawn driller)
-		{
-			float statValue = driller.GetStatValue(StatDefOf.MiningSpeed);
-			portionProgress += statValue;
-			//portionYieldPct += statValue * driller.GetStatValue(StatDefOf.MiningYield) / 3000f;
-			lastUsedTick = Find.TickManager.TicksGame;
-			if (portionProgress > delay)
-			{
-				TryDigResource(driller);
-				portionProgress = 0f;
-				//portionYieldPct = 0f;
+        {
+            float statValue = driller.GetStatValue(StatDefOf.MiningSpeed);
+            portionProgress += statValue;
+            //portionYieldPct += statValue * driller.GetStatValue(StatDefOf.MiningYield) / 3000f;
+            lastUsedTick = Find.TickManager.TicksGame;
+            if (portionProgress > delay)
+            {
+                TryDigResource(driller);
+                portionProgress = 0f;
+                //portionYieldPct = 0f;
             }
         }
 
@@ -73,9 +91,15 @@ namespace ExpandedMaterialsStones
             {
                 int index = terrainResources.terrains.IndexOf(terrainTile);
                 Thing resource = ThingMaker.MakeThing(terrainResources.resources[index]);
-                resource.stackCount = Mathf.RoundToInt((float)pawn.skills.GetSkill(SkillDefOf.Mining).Level * Rand.Range(terrainResources.minChance[index], terrainResources.maxChance[index]));
+                resource.stackCount = Mathf.RoundToInt(pawn.skills.GetSkill(SkillDefOf.Mining).Level * Rand.Range(terrainResources.minChance[index], terrainResources.maxChance[index]));
                 delay += Rand.Range(20, 60);
                 GenPlace.TryPlaceThing(resource, parent.InteractionCell, parent.Map, ThingPlaceMode.Near);
+                if (IsNextToWaterTile())
+                {
+                    Thing extraSand = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("EM_Sand"));
+                    extraSand.stackCount = Mathf.RoundToInt(pawn.skills.GetSkill(SkillDefOf.Mining).Level == 0 ? 0.5f : pawn.skills.GetSkill(SkillDefOf.Mining).Level * Rand.Range(terrainResources.minChance[index], terrainResources.maxChance[index]));
+                    GenPlace.TryPlaceThing(extraSand, parent.InteractionCell, parent.Map, ThingPlaceMode.Near);
+                }
                 resourceGatheredTotal += resource.stackCount;
                 if (Rand.Range(0, 100) < 2)
                 {

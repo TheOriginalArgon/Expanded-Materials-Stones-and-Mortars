@@ -8,7 +8,7 @@
         <label>sand</label>
         <description>Bags of sand, a granular material composed mostly of finely divided rock and mineral particles. Sand is widely found on beaches and deserts.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/Sandbags</texPath>
+            <texPath>Things/Item/Resource/EM_Sandbags</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -20,9 +20,32 @@
             <Mass>0.6</Mass>
             <Flammability>0</Flammability>
         </statBases>
+        <stuffProps>
+            <stuffAdjective>glass</stuffAdjective>
+            <categories>
+                <li>EM_Sculpture</li>
+            </categories>
+            <commonality>0</commonality>
+            <color>(192,203,204)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statOffsets>
+                <Beauty>12</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.8</MaxHitPoints>
+                <Flammability>0.1</Flammability>
+                <Beauty>1.3</Beauty>
+                <WorkToMake>2</WorkToMake>
+                <WorkToBuild>2</WorkToBuild>
+            </statFactors>
+        </stuffProps>
         <thingCategories>
             <li>ResourcesRaw</li>
         </thingCategories>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>150</allowedArchonexusCount>
     </ThingDef>
 
@@ -33,7 +56,7 @@
         <label>cement</label>
         <description>Bags of cement, a fine material mostly formed of a mixture of limestone and clay. Cement is one of mankind most massively used resource, and it can be combined with sand to make concrete, which is extremely useful to build walls and all types of structures.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/Cement</texPath>
+            <texPath>Things/Item/Resource/EM_Cement</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -59,7 +82,7 @@
         <label>mud</label>
         <description>Mud composed basically of wet soil. Mud is a common primitive material widely used by tribals, and it can also be filtered to obtain clay, a much finer type of soil with increased plasticity and uses.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/Mud</texPath>
+            <texPath>Things/Item/Resource/EM_Mud</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -72,9 +95,31 @@
             <Flammability>0.1</Flammability>
             <DeteriorationRate>0.2</DeteriorationRate>
         </statBases>
+        <stuffProps>
+            <categories>
+                <li>EM_Sculpture</li>
+            </categories>
+            <commonality>0</commonality>
+            <color>(115,100,92)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.8</MaxHitPoints>
+                <Flammability>0.2</Flammability>
+                <Beauty>0.8</Beauty>
+                <WorkToMake>0.8</WorkToMake>
+                <WorkToBuild>0.8</WorkToBuild>
+            </statFactors>
+        </stuffProps>
         <thingCategories>
             <li>ResourcesRaw</li>
         </thingCategories>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>150</allowedArchonexusCount>
     </ThingDef>
 
@@ -86,7 +131,7 @@
         <label>clay</label>
         <description>A natural soil material containing high amounts of clay. Clay is used due to its plasticity and its capacity to dry into a hard and brittle material when fired. It can be used to make pottery, art or bricks.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/Clay</texPath>
+            <texPath>Things/Item/Resource/EM_Clay</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -99,10 +144,82 @@
             <Flammability>0.1</Flammability>
             <DeteriorationRate>0.2</DeteriorationRate>
         </statBases>
+        <stuffProps>
+            <stuffAdjective>ceramic</stuffAdjective>
+            <categories>
+                <li>EM_Sculpture</li>
+            </categories>
+            <commonality>0</commonality>
+            <color>(222,164,140)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statOffsets>
+                <Beauty>8</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.8</MaxHitPoints>
+                <Flammability>0.2</Flammability>
+                <Beauty>0.8</Beauty>
+                <WorkToMake>0.8</WorkToMake>
+                <WorkToBuild>0.8</WorkToBuild>
+            </statFactors>
+        </stuffProps>
         <thingCategories>
             <li>ResourcesRaw</li>
         </thingCategories>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+
+    <!-- Porcelain -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_Porcelain</defName>
+        <label>porcelain</label>
+        <description>A ceramic material obtained by heating clay. Highly beautiful and valuable. Ideal for art.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/EM_Porcelain</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>0.85</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0.05</Flammability>
+            <DeteriorationRate>0.65</DeteriorationRate>
+        </statBases>
+        <stuffProps>
+            <categories>
+                <li>EM_Sculpture</li>
+            </categories>
+            <commonality>0.01</commonality>
+            <color>(220,242,242)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statOffsets>
+                <Beauty>15</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.8</MaxHitPoints>
+                <Flammability>0.05</Flammability>
+                <Beauty>1.5</Beauty>
+                <WorkToMake>1.2</WorkToMake>
+                <WorkToBuild>1.2</WorkToBuild>
+            </statFactors>
+        </stuffProps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <allowedArchonexusCount>100</allowedArchonexusCount>
     </ThingDef>
 
 

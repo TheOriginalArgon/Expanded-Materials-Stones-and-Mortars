@@ -1,0 +1,48 @@
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>EM_PathMaking</defName>
+        <label>path making</label>
+        <description>Make neat pathways of different patterns using small concrete bricks.</description>
+        <baseCost>250</baseCost>
+        <techLevel>Medieval</techLevel>
+        <tags>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_MedievalStart</li>
+        </tags>
+        <tab>EM_RTab_StonesAndMortars</tab>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+        <prerequisites>
+            <li>EM_ConcreteMaking</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>EM_ConcreteMaking</defName>
+        <label>concrete making</label>
+        <description>Make neat pathways of different patterns using small concrete bricks.</description>
+        <baseCost>500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <tags>
+            <li>ClassicStart</li>
+        </tags>
+        <tab>EM_RTab_StonesAndMortars</tab>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+        <prerequisites>
+            <li>Stonecutting</li>
+        </prerequisites>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+        <defName>EM_Porcelain</defName>
+        <label>porcelain</label>
+        <description>Make kilns to turn clay into porcelain, a beautiful ceramic material used to make art and valuable sculptures.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Medieval</techLevel>
+        <tab>EM_RTab_StonesAndMortars</tab>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

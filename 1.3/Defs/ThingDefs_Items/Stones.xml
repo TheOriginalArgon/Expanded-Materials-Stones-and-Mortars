@@ -21,7 +21,7 @@
 
     <ThingDef ParentName="EM_BasaltBase">
         <defName>EM_SmoothedBasalt</defName>
-        <label>smoothed granite</label>
+        <label>smoothed basalt</label>
         <description>A very hard igneous rock. The shining surface is filled with a mosaic of green, white, and pink speckles.</description>
         <graphicData>
             <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>

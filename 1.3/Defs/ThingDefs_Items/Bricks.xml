@@ -22,15 +22,6 @@
         <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
     </StuffCategoryDef>
 
-    <!-- <ThingCategoryDef>
-        <defName>EM_Cobblestones</defName>
-        <label>cobblestones</label>
-        <parent>ResourcesRaw</parent>
-        <iconPath>Things/Item/Resource/Cobblestone/Cobblestone_c</iconPath>
-        <resourceReadoutRoot>true</resourceReadoutRoot>
-    </ThingCategoryDef> -->
-
-
     <!-- Mud Bricks -->
 
     <ThingDef ParentName="ResourceBase">
@@ -38,7 +29,7 @@
         <label>fresh adobe bricks</label>
         <description>Mud shaped into bricks. These are still fresh and need to dry before they can become usable. Hot temperatures make the drying faster, rain will destroy them, so be careful where you leave them.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/BricksMud_Fresh</texPath>
+            <texPath>Things/Item/Resource/EM_BricksMud_Fresh</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -71,7 +62,7 @@
         <label>adobe bricks</label>
         <description>Mud shaped into bricks. Adobe bricks chip very easily and take some damage during rain, but are very resistant to fire and stupid cheap to make.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/BricksMud_Dry</texPath>
+            <texPath>Things/Item/Resource/EM_BricksMud_Dry</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -123,7 +114,7 @@
         <label>fresh ceramic bricks</label>
         <description>Clay shaped into bricks. These are still fresh and need to be fired in a brick oven in order to become usable. Clay is compact and dense, which makes these bricks not ruin faster when exposed to rain, however, they will deteriorate at a normal rate if left outside.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/BricksClay_Fresh</texPath>
+            <texPath>Things/Item/Resource/EM_BricksClay_Fresh</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -147,7 +138,7 @@
         <label>ceramic bricks</label>
         <description>Clay shaped into bricks. Clay bricks are strong and resistant, plus they make fairly pretty walls, and are cheaper and quicker than stone blocks.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/BricksClay_Dry</texPath>
+            <texPath>Things/Item/Resource/EM_BricksClay_Dry</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -199,7 +190,7 @@
         <label>concrete pathway</label>
         <description>Small concrete bricks made of cement and sand. These bricks are widely used to make neat pathways with different styles and designs.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/CobblePathway</texPath>
+            <texPath>Things/Item/Resource/EM_CobblePathway</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>
@@ -229,7 +220,7 @@
         <label>concrete bricks</label>
         <description>Big bricks made of cement and sand. Walls made of these bricks are built faster and are stronger than normal clay brick walls, but they are quite ugly actually.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/ConcreteBricks</texPath>
+            <texPath>Things/Item/Resource/EM_ConcreteBricks</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Standard_Drop</soundInteract>

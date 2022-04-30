@@ -1,0 +1,79 @@
+<Defs>
+
+    <!-- Tiles -->
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>EM_TileBasalt</defName>
+        <label>basalt tile</label>
+        <color>(65,62,67))</color>
+        <costList>
+            <EM_BlocksBasalt>4</EM_BlocksBasalt>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>EM_TileShale</defName>
+        <label>shale tile</label>
+        <color>(138,142,170)</color>
+        <costList>
+            <EM_BlocksShale>4</EM_BlocksShale>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>EM_TileSiltstone</defName>
+        <label>siltstone tile</label>
+        <color>(179,127,100)</color>
+        <costList>
+            <EM_BlocksSiltstone>4</EM_BlocksSiltstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>EM_TileSchist</defName>
+        <label>schist tile</label>
+        <color>(224,228,222)</color>
+        <costList>
+            <EM_BlocksSchist>4</EM_BlocksSchist>
+        </costList>
+    </TerrainDef>
+
+    <!-- Flagstone -->
+
+    <TerrainDef ParentName="FlagstoneBase">
+        <defName>EM_FlagstoneBasalt</defName>
+        <label>basalt flagstone</label>
+        <color>(65,62,67))</color>
+        <costList>
+            <EM_CobblestoneBasalt>4</EM_CobblestoneBasalt>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FlagstoneBase">
+        <defName>EM_FlagstoneShale</defName>
+        <label>shale flagstone</label>
+        <color>(138,142,170)</color>
+        <costList>
+            <EM_CobblestoneShale>4</EM_CobblestoneShale>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FlagstoneBase">
+        <defName>EM_FlagstoneSiltstone</defName>
+        <label>siltstone flagstone</label>
+        <color>(179,127,100)</color>
+        <costList>
+            <EM_CobblestoneSiltstone>4</EM_CobblestoneSiltstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FlagstoneBase">
+        <defName>EM_FlagstoneSchist</defName>
+        <label>schist flagstone</label>
+        <color>(224,228,222)</color>
+        <costList>
+            <EM_CobblestoneSchist>4</EM_CobblestoneSchist>
+        </costList>
+    </TerrainDef>
+
+</Defs>

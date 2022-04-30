@@ -3,7 +3,7 @@
     <ThingDef ParentName="ResourceBase" Name="EM_CobblestoneBase" Abstract="True">
         <description>Cobblestone. Useful for building cheap yet strong walls. They are more efficient to make walls than bricks, but they can't be used to make items or weapons.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/Cobblestone</texPath>
+            <texPath>Things/Item/Resource/EM_Cobblestone</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Stone_Drop</soundInteract>
@@ -68,19 +68,13 @@
         <defName>EM_Cobbly</defName>
     </StuffAppearanceDef>
 
-    <StuffCategoryDef>
-        <defName>EM_Cobblestony</defName>
-        <label>cobblestony</label>
-        <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
-        <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
-        <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
-    </StuffCategoryDef>
+    
 
     <ThingCategoryDef>
         <defName>EM_Cobblestones</defName>
         <label>cobblestones</label>
         <parent>ResourcesRaw</parent>
-        <iconPath>Things/Item/Resource/Cobblestone/Cobblestone_c</iconPath>
+        <iconPath>Things/Item/Resource/EM_Cobblestone/EM_Cobblestone_c</iconPath>
         <resourceReadoutRoot>true</resourceReadoutRoot>
     </ThingCategoryDef>
 
@@ -491,8 +485,8 @@
 
     <ThingDef ParentName="EM_CobblestoneBase">
         <defName>EM_CobblestoneMarble</defName>
-        <label>slate cobblestone</label>
-        <description>Slate smashed down to cobblestone. Marble is a soft, beautiful stone, known for being easy to sculpt.</description>
+        <label>marble cobblestone</label>
+        <description>Marble smashed down to cobblestone. Marble is a soft, beautiful stone, known for being easy to sculpt.</description>
         <graphicData>
             <color>(132,135,132)</color>
         </graphicData>

@@ -38,7 +38,11 @@ namespace ExpandedMaterialsStones
     [HarmonyPatch(nameof(GenRecipe.MakeRecipeProducts))]
     class Patch_YieldingProducts
     {
-        private static Func<Thing, RecipeDef, Pawn, Precept_ThingStyle, Thing> postProcessProduct = (Func<Thing, RecipeDef, Pawn, Precept_ThingStyle, Thing>)AccessTools.Method(typeof(GenRecipe), "PostProcessProduct").CreateDelegate(typeof(Func<Thing, RecipeDef, Pawn, Precept_ThingStyle, Thing>));
+        // Calling a local private function
+        private static Func<Thing, RecipeDef, Pawn, Precept_ThingStyle, Thing> postProcessProduct =
+            (Func<Thing, RecipeDef, Pawn, Precept_ThingStyle, Thing>)AccessTools.Method(typeof(GenRecipe), "PostProcessProduct").CreateDelegate(typeof(Func<Thing, RecipeDef, Pawn, Precept_ThingStyle, Thing>));
+
+        // Patch
         static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef, Pawn worker, List<Thing> ingredients, Precept_ThingStyle precept)
         {
             if (recipeDef.HasModExtension<RecipeDefExtension>())
@@ -53,9 +57,11 @@ namespace ExpandedMaterialsStones
                         outputThing.stackCount = ingredients[i].def.GetModExtension<ThingDefExtension>().amount[ingredients[i].def.GetModExtension<ThingDefExtension>().resources.IndexOf(targetDef)];
 
                         yield return postProcessProduct(outputThing, recipeDef, worker, precept);
+                        yield break;
                     }
                 }
             }
+            yield return __result.FirstOrDefault();
         }
     }
 }
