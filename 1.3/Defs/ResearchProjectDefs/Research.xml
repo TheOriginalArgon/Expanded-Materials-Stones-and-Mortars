@@ -20,7 +20,7 @@
     <ResearchProjectDef>
         <defName>EM_ConcreteMaking</defName>
         <label>concrete making</label>
-        <description>Make neat pathways of different patterns using small concrete bricks.</description>
+        <description>Make concrete bricks by combining cement and sand at a stonecutter table or crafting spot.</description>
         <baseCost>500</baseCost>
         <techLevel>Medieval</techLevel>
         <tags>
