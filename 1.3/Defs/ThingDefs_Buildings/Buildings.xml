@@ -238,8 +238,8 @@
         <!-- <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed> -->
       </li>
       <li Class="ItemProcessor.CompProperties_ItemProcessor">
-        <buildingOnGraphic>Things/Building/EM_Oven</buildingOnGraphic>
-        <buildingFinishedGraphic>Things/Building/Oven</buildingFinishedGraphic>
+        <buildingOnGraphic>Things/Building/EM_PorcelainOven</buildingOnGraphic>
+        <buildingFinishedGraphic>Things/Building/PorcelainOven</buildingFinishedGraphic>
 
         <numberOfInputs>1</numberOfInputs>
         <qualitySelector>false</qualitySelector>
