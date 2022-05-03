@@ -195,7 +195,9 @@
     <rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <researchPrerequisites>EM_Porcelain</researchPrerequisites>
+    <researchPrerequisites>
+      <li>EM_Porcelain</li>
+    </researchPrerequisites>
     <useHitPoints>True</useHitPoints>
     <statBases>
       <WorkToBuild>1200</WorkToBuild>
