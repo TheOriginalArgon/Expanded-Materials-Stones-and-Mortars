@@ -78,6 +78,7 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <workAmount>700</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <researchPrerequisite>EM_ConcreteMaking</researchPrerequisite>
     <recipeUsers>
       <li>TableStonecutter</li>
       <li>CraftingSpot</li>
@@ -120,6 +121,7 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <workAmount>700</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <researchPrerequisite>EM_PathMaking</researchPrerequisite>
     <recipeUsers>
       <li>TableStonecutter</li>
       <li>CraftingSpot</li>

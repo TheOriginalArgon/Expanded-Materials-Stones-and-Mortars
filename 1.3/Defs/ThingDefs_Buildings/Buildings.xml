@@ -195,6 +195,9 @@
     <rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
+    <researchPrerequisites>
+      <li>EM_Porcelain</li>
+    </researchPrerequisites>
     <useHitPoints>True</useHitPoints>
     <statBases>
       <WorkToBuild>1200</WorkToBuild>
@@ -238,7 +241,7 @@
         <!-- <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed> -->
       </li>
       <li Class="ItemProcessor.CompProperties_ItemProcessor">
-        <buildingOnGraphic>Things/Building/EM_Oven</buildingOnGraphic>
+        <buildingOnGraphic>Things/Building/EM_PorcelainOven</buildingOnGraphic>
         <buildingFinishedGraphic>Things/Building/Oven</buildingFinishedGraphic>
 
         <numberOfInputs>1</numberOfInputs>

@@ -54,7 +54,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>EM_Cement</defName>
         <label>cement</label>
-        <description>Bags of cement, a fine material mostly formed of a mixture of limestone and clay. Cement is one of mankind most massively used resource, and it can be combined with sand to make concrete, which is extremely useful to build walls and all types of structures.</description>
+        <description>Bags of cement, a fine material mostly formed of a mixture of limestone and clay. Cement is one of mankind's most massively used resource, and it can be combined with sand to make concrete, which is extremely useful to build walls and all types of structures.</description>
         <graphicData>
             <texPath>Things/Item/Resource/EM_Cement</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
