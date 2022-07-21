@@ -43,6 +43,9 @@
         <tab>EM_RTab_StonesAndMortars</tab>
         <researchViewX>2.00</researchViewX>
         <researchViewY>0.00</researchViewY>
+        <prerequisites>
+            <li>Stonecutting</li>
+        </prerequisites>
     </ResearchProjectDef>
 
 </Defs>

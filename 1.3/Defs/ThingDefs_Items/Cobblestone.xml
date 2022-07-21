@@ -99,7 +99,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>basalt</stuffAdjective>
+            <stuffAdjective>basalt cobble</stuffAdjective>
             <statFactors>
                 <MaxHitPoints>1.5</MaxHitPoints>
             </statFactors>
@@ -149,7 +149,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>shale</stuffAdjective>
+            <stuffAdjective>shale cobble</stuffAdjective>
             <statFactors>
                 <MaxHitPoints>1.2</MaxHitPoints>
             </statFactors>
@@ -199,7 +199,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>siltstone</stuffAdjective>
+            <stuffAdjective>siltstone cobble</stuffAdjective>
             <statFactors>
                 <MaxHitPoints>1.2</MaxHitPoints>
             </statFactors>
@@ -249,7 +249,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>schist</stuffAdjective>
+            <stuffAdjective>schist cobble</stuffAdjective>
             <statFactors>
                 <MaxHitPoints>1.2</MaxHitPoints>
             </statFactors>
@@ -299,7 +299,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>sandstone</stuffAdjective>
+            <stuffAdjective>sandstone cobble</stuffAdjective>
             <statFactors>
                 <MaxHitPoints>1.2</MaxHitPoints>
             </statFactors>
@@ -349,7 +349,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>granite</stuffAdjective>
+            <stuffAdjective>granite cobble</stuffAdjective>
             <statFactors>
                 <MaxHitPoints>1.2</MaxHitPoints>
             </statFactors>
@@ -399,7 +399,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>limestone</stuffAdjective>
+            <stuffAdjective>limestone cobble</stuffAdjective>
             <statFactors>
                 <MaxHitPoints>1</MaxHitPoints>
             </statFactors>
@@ -449,7 +449,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>slate</stuffAdjective>
+            <stuffAdjective>slate cobble</stuffAdjective>
             <statFactors>
                 <MaxHitPoints>1.1</MaxHitPoints>
             </statFactors>
@@ -499,7 +499,7 @@
             <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
             <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-            <stuffAdjective>marble</stuffAdjective>
+            <stuffAdjective>marble cobble</stuffAdjective>
             <statFactors>
                 <Beauty>1.12</Beauty>
                 <MaxHitPoints>1.1</MaxHitPoints>

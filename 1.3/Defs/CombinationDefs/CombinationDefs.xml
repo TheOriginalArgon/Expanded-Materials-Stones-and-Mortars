@@ -8,7 +8,7 @@
 		<building>EM_BrickOven</building>
 		<isCategoryRecipe>false</isCategoryRecipe>
 		<items>
-			<li>EM_Clay</li>
+			<li>EM_ClayBricks_Fresh</li>
         </items>	
 		<amount>
 			<li>30</li>

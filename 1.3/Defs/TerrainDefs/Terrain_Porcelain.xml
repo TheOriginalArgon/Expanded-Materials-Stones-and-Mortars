@@ -1,0 +1,54 @@
+<Defs>
+    <DesignatorDropdownGroupDef>
+        <defName>EM_Floor_Porcelain</defName>
+        <label>porcelain tile</label>
+    </DesignatorDropdownGroupDef>
+
+    <TerrainDef ParentName="FloorBase">
+        <defName>EM_PorcelainTiles_Big</defName>
+        <label>large porcelain tiles</label>
+        <renderPrecedence>230</renderPrecedence>
+        <description>Clean and smooth tiles made of porcelain. Hard to lay and expensive, but they look amazingly good.</description>
+        <texturePath>Terrain/EM_PorcelainTiles_02</texturePath>
+        <statBases>
+            <WorkToBuild>1300</WorkToBuild>
+            <Beauty>4</Beauty>
+            <Cleanliness>0.2</Cleanliness>
+        </statBases>
+        <costList>
+            <EM_Porcelain>12</EM_Porcelain>
+        </costList>
+        <designationHotKey>Misc8</designationHotKey>
+        <researchPrerequisites>
+            <li>EM_Porcelain</li>
+        </researchPrerequisites>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+        <designatorDropdown>EM_Floor_Porcelain</designatorDropdown>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FloorBase">
+        <defName>EM_PorcelainTiles_Small</defName>
+        <label>small porcelain tiles</label>
+        <renderPrecedence>230</renderPrecedence>
+        <description>Clean and smooth tiles made of porcelain. Hard to lay and expensive, but they look amazingly good.</description>
+        <texturePath>Terrain/EM_PorcelainTiles_01</texturePath>
+        <statBases>
+            <WorkToBuild>1300</WorkToBuild>
+            <Beauty>4</Beauty>
+            <Cleanliness>0.2</Cleanliness>
+        </statBases>
+        <costList>
+            <EM_Porcelain>12</EM_Porcelain>
+        </costList>
+        <designationHotKey>Misc8</designationHotKey>
+        <researchPrerequisites>
+            <li>EM_Porcelain</li>
+        </researchPrerequisites>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+        <designatorDropdown>EM_Floor_Porcelain</designatorDropdown>
+    </TerrainDef>
+</Defs>

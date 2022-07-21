@@ -8,7 +8,7 @@
 		<building>EM_BrickOven</building>
 		<slot>1</slot>
 		<items>			
-			<li>EM_Clay</li>			
+			<li>EM_ClayBricks_Fresh</li>			
 		</items>							
 	</ItemProcessor.ItemAcceptedDef>
 

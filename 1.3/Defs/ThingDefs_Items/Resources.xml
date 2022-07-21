@@ -35,7 +35,7 @@
                 <Beauty>12</Beauty>
             </statOffsets>
             <statFactors>
-                <MaxHitPoints>0.8</MaxHitPoints>
+                <MaxHitPoints>0.5</MaxHitPoints>
                 <Flammability>0.1</Flammability>
                 <Beauty>1.3</Beauty>
                 <WorkToMake>2</WorkToMake>
@@ -109,7 +109,7 @@
                 <Beauty>2</Beauty>
             </statOffsets>
             <statFactors>
-                <MaxHitPoints>0.8</MaxHitPoints>
+                <MaxHitPoints>0.5</MaxHitPoints>
                 <Flammability>0.2</Flammability>
                 <Beauty>0.8</Beauty>
                 <WorkToMake>0.8</WorkToMake>
@@ -159,7 +159,7 @@
                 <Beauty>8</Beauty>
             </statOffsets>
             <statFactors>
-                <MaxHitPoints>0.8</MaxHitPoints>
+                <MaxHitPoints>0.6</MaxHitPoints>
                 <Flammability>0.2</Flammability>
                 <Beauty>0.8</Beauty>
                 <WorkToMake>0.8</WorkToMake>
@@ -208,7 +208,7 @@
                 <Beauty>15</Beauty>
             </statOffsets>
             <statFactors>
-                <MaxHitPoints>0.8</MaxHitPoints>
+                <MaxHitPoints>0.7</MaxHitPoints>
                 <Flammability>0.05</Flammability>
                 <Beauty>1.5</Beauty>
                 <WorkToMake>1.2</WorkToMake>

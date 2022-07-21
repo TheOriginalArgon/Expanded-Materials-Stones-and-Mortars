@@ -53,6 +53,15 @@ namespace ExpandedMaterialsStones
             return false;
         }
 
+        private bool IsSandyTerrain()
+        {
+            if (terrainResources.specialTerrains.Contains(parent.Map.terrainGrid.TerrainAt(parent.Position)))
+            {
+                return true;
+            }
+            return false;
+        }
+
         public override void PostExposeData()
         {
             Scribe_Values.Look(ref portionProgress, "portionProgress", 0f);
@@ -94,7 +103,7 @@ namespace ExpandedMaterialsStones
                 resource.stackCount = Mathf.RoundToInt(pawn.skills.GetSkill(SkillDefOf.Mining).Level * Rand.Range(terrainResources.minChance[index], terrainResources.maxChance[index]));
                 delay += Rand.Range(20, 60);
                 GenPlace.TryPlaceThing(resource, parent.InteractionCell, parent.Map, ThingPlaceMode.Near);
-                if (IsNextToWaterTile())
+                if (IsNextToWaterTile() || IsSandyTerrain())
                 {
                     Thing extraSand = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("EM_Sand"));
                     extraSand.stackCount = Mathf.RoundToInt(pawn.skills.GetSkill(SkillDefOf.Mining).Level == 0 ? 0.5f : pawn.skills.GetSkill(SkillDefOf.Mining).Level * Rand.Range(terrainResources.minChance[index], terrainResources.maxChance[index]));
@@ -117,9 +126,19 @@ namespace ExpandedMaterialsStones
             StringBuilder stringBuilder = new StringBuilder();
 
             // Gathering information for the first part of the string.
+            string extraResource;
+            if (IsNextToWaterTile() || IsSandyTerrain())
+            {
+                extraResource = " and sand";
+            }
+            else
+            {
+                extraResource = "";
+            }
+
             TerrainDef terrainTile = parent.Map.terrainGrid.TerrainAt(parent.Position);
             int index = terrainResources.terrains.IndexOf(terrainTile);
-            string resourceName = terrainResources.resources[index].label;
+            string resourceName = terrainResources.resources[index].label + extraResource;
 
             // Setting the first line.
             stringBuilder.Append("EM_ResourceBelowSpot".Translate(resourceName));

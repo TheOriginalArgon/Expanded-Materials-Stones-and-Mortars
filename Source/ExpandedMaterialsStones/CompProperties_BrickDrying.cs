@@ -43,6 +43,8 @@ namespace ExpandedMaterialsStones
     class CompBrickDrying : ThingComp
     {
         private float dryProgressInt;
+
+        private float lightRequired = 0.6f;
         public CompProperties_BrickDrying Props => (CompProperties_BrickDrying)props;
 
         public float DryProgress
@@ -106,7 +108,7 @@ namespace ExpandedMaterialsStones
 
         public float DryRate(float temp, Map map)
         {
-            if (map.weatherManager.RainRate <= 0f || (map.weatherManager.RainRate != 0f && map.roofGrid.Roofed(parent.Position)))
+            if ((map.weatherManager.RainRate <= 0f || (map.weatherManager.RainRate != 0f && map.roofGrid.Roofed(parent.Position))) && map.skyManager.CurSkyGlow > lightRequired)
             {
                 if (temp < 2f)
                 {
@@ -143,7 +145,7 @@ namespace ExpandedMaterialsStones
                 return 72000000;
             }
             float ticksToDry = (float)Props.TicksToDryStart - DryProgress;
-            float ticksToRuin = Mathf.Abs((float)Props.TicksToRuinStart) + DryProgress;
+            float ticksToRuin = Mathf.Abs((float)Props.TicksToRuinStart) - DryProgress; // Changed + to -
             if (DryProgress > 0f)
             {
                 return Mathf.RoundToInt(ticksToDry / dryRate);
@@ -193,20 +195,28 @@ namespace ExpandedMaterialsStones
 
         public override string CompInspectStringExtra()
         {
+            float dryRate = DryRate(Mathf.RoundToInt(parent.AmbientTemperature), parent.Map);
             StringBuilder stringBuilder = new StringBuilder();
-            //if (DryProgress > 0f)
-            //{
-                float dryRate = DryRate(Mathf.RoundToInt(parent.AmbientTemperature), parent.Map);
+            if (dryRate != 0f)
+            {
                 int ticksUntilDryOrRuined = TicksUntilDryOrRuinedAtCurrentConditions;
                 if (dryRate > 0f)
                 {
                     stringBuilder.Append("EM_CurrentlyDrying".Translate(ticksUntilDryOrRuined.ToStringTicksToPeriod()) + ".");
                 }
-                if (dryRate <= 0f)
+                if (dryRate < 0f)
                 {
                     stringBuilder.Append("EM_CurrentlyRuining".Translate(Mathf.Abs(ticksUntilDryOrRuined).ToStringTicksToPeriod()) + ".");
                 }
-            //}
+            }
+            else
+            {
+                stringBuilder.Append("EM_NotDrying".Translate(lightRequired) + ".");
+            }
+
+            // DEBUG.
+            stringBuilder.AppendInNewLine("DEBUG_DryRate".Translate(dryRate.ToStringPercent()) + ".");
+
             return stringBuilder.ToString();
         }
 

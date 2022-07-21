@@ -11,6 +11,11 @@
             <li>Sand</li>
             <li>SoftSand</li>
         </terrains>
+        <specialTerrains>
+            <li>Soil</li>
+            <li>MarshyTerrain</li>
+            <li>SoftSand</li>
+        </specialTerrains>
         <resources>
             <li>EM_Mud</li>
             <li>EM_Mud</li>

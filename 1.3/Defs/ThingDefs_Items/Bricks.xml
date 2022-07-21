@@ -14,14 +14,6 @@
         <defName>EM_ConcreteBricky</defName>
     </StuffAppearanceDef>
 
-    <StuffCategoryDef>
-        <defName>EM_Bricks</defName>
-        <label>bricks</label>
-        <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
-        <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
-        <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
-    </StuffCategoryDef>
-
     <!-- Mud Bricks -->
 
     <ThingDef ParentName="ResourceBase">
@@ -89,7 +81,7 @@
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
             <appearance>EM_Bricky</appearance>
             <statFactors>
-                <MaxHitPoints>0.4</MaxHitPoints>
+                <MaxHitPoints>0.6</MaxHitPoints>
                 <Flammability>0.3</Flammability>
                 <WorkToMake>0.8</WorkToMake>
                 <WorkToBuild>0.8</WorkToBuild>
@@ -165,7 +157,7 @@
             <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
             <appearance>EM_CleanBricky</appearance>
             <statFactors>
-                <MaxHitPoints>0.5</MaxHitPoints>
+                <MaxHitPoints>0.7</MaxHitPoints>
                 <Flammability>0.3</Flammability>
                 <WorkToMake>0.8</WorkToMake>
                 <WorkToBuild>0.8</WorkToBuild>
@@ -248,7 +240,7 @@
             <appearance>EM_ConcreteBricky</appearance>
             <statFactors>
                 <Beauty>-0.2</Beauty>
-                <MaxHitPoints>0.7</MaxHitPoints>
+                <MaxHitPoints>0.75</MaxHitPoints>
                 <Flammability>0.1</Flammability>
                 <WorkToMake>0.5</WorkToMake>
                 <WorkToBuild>0.5</WorkToBuild>

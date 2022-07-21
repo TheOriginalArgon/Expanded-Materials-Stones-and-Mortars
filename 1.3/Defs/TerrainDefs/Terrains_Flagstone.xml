@@ -5,7 +5,7 @@
     <TerrainDef ParentName="TileStoneBase">
         <defName>EM_TileBasalt</defName>
         <label>basalt tile</label>
-        <color>(65,62,67))</color>
+        <color>(65,62,67)</color>
         <costList>
             <EM_BlocksBasalt>4</EM_BlocksBasalt>
         </costList>
@@ -43,7 +43,7 @@
     <TerrainDef ParentName="FlagstoneBase">
         <defName>EM_FlagstoneBasalt</defName>
         <label>basalt flagstone</label>
-        <color>(65,62,67))</color>
+        <color>(65,62,67)</color>
         <costList>
             <EM_CobblestoneBasalt>4</EM_CobblestoneBasalt>
         </costList>

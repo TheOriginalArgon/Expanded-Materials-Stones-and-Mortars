@@ -10,7 +10,7 @@
     <jobString>Making adobe bricks.</jobString>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
-    <workAmount>700</workAmount>
+    <workAmount>600</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <recipeUsers>
       <li>TableStonecutter</li>
@@ -76,12 +76,12 @@
     <jobString>Making concrete bricks.</jobString>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
-    <workAmount>700</workAmount>
+    <workAmount>1500</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <researchPrerequisite>EM_ConcreteMaking</researchPrerequisite>
     <recipeUsers>
       <li>TableStonecutter</li>
-      <li>CraftingSpot</li>
+      <!-- <li>CraftingSpot</li> -->
     </recipeUsers>
     <ingredients>
       <li>

@@ -16,4 +16,12 @@
         <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
     </StuffCategoryDef>
 
+    <StuffCategoryDef>
+        <defName>EM_Bricks</defName>
+        <label>bricks</label>
+        <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+        <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+        <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+    </StuffCategoryDef>
+
 </Defs>

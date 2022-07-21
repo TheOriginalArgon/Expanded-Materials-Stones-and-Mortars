@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RimWorld;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace ExpandedMaterialsStones
@@ -12,6 +7,8 @@ namespace ExpandedMaterialsStones
     {
 
         public List<TerrainDef> terrains = new List<TerrainDef>();
+
+        public List<TerrainDef> specialTerrains= new List<TerrainDef>();
 
         public List<ThingDef> resources = new List<ThingDef>();
 
