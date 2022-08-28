@@ -19,5 +19,10 @@
 	<SM_CancelBringingMeat>Cancel bringing materials</SM_CancelBringingMeat>
 	<SM_CancelBringingMeatDesc>Cancel bringing materials to the oven.</SM_CancelBringingMeatDesc>
 
+    <SM_StartInsertionMaterial>Insert materials</SM_StartInsertionMaterial>
+    <SM_StartInsertionMaterialDesc>Insert materials into the oven.</SM_StartInsertionMaterialDesc>
+    <SM_CancelBringingMaterial>Cancel insertion</SM_CancelBringingMaterial>
+    <SM_CancelBringingMaterialDesc>Cancel inserting materials into the oven.</SM_CancelBringingMaterialDesc>
+
 
 </LanguageData>

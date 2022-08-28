@@ -78,7 +78,7 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <workAmount>1500</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <researchPrerequisite>EM_ConcreteMaking</researchPrerequisite>
+    <researchPrerequisite>VMEu_ConcreteMaking</researchPrerequisite>
     <recipeUsers>
       <li>TableStonecutter</li>
       <!-- <li>CraftingSpot</li> -->

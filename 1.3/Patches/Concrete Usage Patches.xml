@@ -53,6 +53,27 @@
                         </li>
                     </operations>
                 </li>
+
+                <!-- Add the required research project for concrete in case we don't have EM - Metals enabled -->
+                <li Class="PatchOperationAdd">
+                    <ResearchProjectDef>
+                        <defName>VMEu_ConcreteMaking</defName>
+                        <label>concrete making</label>
+                        <description>Make concrete bricks by combining cement and sand at a stonecutter table or crafting spot.</description>
+                        <baseCost>500</baseCost>
+                        <techLevel>Medieval</techLevel>
+                        <tags>
+                            <li>ClassicStart</li>
+                        </tags>
+                        <tab>EM_RTab_StonesAndMortars</tab>
+                        <researchViewX>1.00</researchViewX>
+                        <researchViewY>0.00</researchViewY>
+                        <prerequisites>
+                            <li>Stonecutting</li>
+                        </prerequisites>
+                    </ResearchProjectDef>   
+                </li>
+
             </operations>
 
         </nomatch>

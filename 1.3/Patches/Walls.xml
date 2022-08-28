@@ -61,7 +61,7 @@
         <xpath>/Defs/ThingDef [defName = "Wall"]/comps</xpath>
         <value>
             <li Class="ExpandedMaterialsStones.CompProperties_TakeDamageFromWeather">
-                <damageRate>0.1</damageRate>
+                <damageRate>0.02</damageRate>
                 <weather>Rain</weather>
                 <indifferentToRoofing>true</indifferentToRoofing>
 

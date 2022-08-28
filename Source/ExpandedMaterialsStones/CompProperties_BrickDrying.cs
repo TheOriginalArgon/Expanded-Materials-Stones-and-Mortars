@@ -108,7 +108,7 @@ namespace ExpandedMaterialsStones
 
         public float DryRate(float temp, Map map)
         {
-            if ((map.weatherManager.RainRate <= 0f || (map.weatherManager.RainRate != 0f && map.roofGrid.Roofed(parent.Position))) && map.skyManager.CurSkyGlow > lightRequired)
+            if ((map.weatherManager.RainRate <= 0f || (map.weatherManager.RainRate != 0f && map.roofGrid.Roofed(parent.Position))) && (map.skyManager.CurSkyGlow > lightRequired && !map.roofGrid.Roofed(parent.Position)))
             {
                 if (temp < 2f)
                 {
@@ -211,7 +211,7 @@ namespace ExpandedMaterialsStones
             }
             else
             {
-                stringBuilder.Append("EM_NotDrying".Translate(lightRequired) + ".");
+                stringBuilder.Append("EM_NotDrying".Translate(lightRequired.ToStringPercent()) + ".");
             }
 
             // DEBUG.

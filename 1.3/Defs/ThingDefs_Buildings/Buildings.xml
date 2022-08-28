@@ -114,11 +114,6 @@
     <uiIconScale>0.5</uiIconScale>
     <surfaceType>Item</surfaceType>
     <comps>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>ToolCabinet</li>
-        </linkableFacilities>
-      </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>40.0</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
@@ -133,7 +128,7 @@
       </li>
       <li Class="ItemProcessor.CompProperties_ItemProcessor">
         <buildingOnGraphic>Things/Building/EM_Oven</buildingOnGraphic>
-        <buildingFinishedGraphic>Things/Building/Oven</buildingFinishedGraphic>
+        <buildingFinishedGraphic>Things/Building/EM_Oven</buildingFinishedGraphic>
 
         <numberOfInputs>1</numberOfInputs>
         <qualitySelector>false</qualitySelector>
@@ -145,12 +140,12 @@
         <resetSemiautomaticIcon>UI/EM_ResetClay</resetSemiautomaticIcon>
         <chooseIngredientsIcon>UI/EM_ClayEmpty</chooseIngredientsIcon>
 
-        <bringIngredientsText>SM_StartInsertionMeat</bringIngredientsText>
-        <bringIngredientsDesc>SM_StartInsertionMeatDesc</bringIngredientsDesc>
+        <bringIngredientsText>SM_StartInsertionMaterial</bringIngredientsText>
+        <bringIngredientsDesc>SM_StartInsertionMaterialDesc</bringIngredientsDesc>
         <bringIngredientsIcon>UI/EM_InsertClay</bringIngredientsIcon>
 
-        <cancelIngredientsText>SM_CancelBringingMeat</cancelIngredientsText>
-        <cancelIngredientsDesc>SM_CancelBringingMeatDesc</cancelIngredientsDesc>
+        <cancelIngredientsText>SM_CancelBringingMaterial</cancelIngredientsText>
+        <cancelIngredientsDesc>SM_CancelBringingMaterialDesc</cancelIngredientsDesc>
         <cancelIngredientsIcon>UI/EM_CancelClay</cancelIngredientsIcon>
 
         <noPowerDestroysProgress>false</noPowerDestroysProgress>
@@ -193,7 +188,7 @@
       <li>EM_Bricks</li>
     </stuffCategories>
     <tickerType>Normal</tickerType>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>100</costStuffCount>
     <rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -225,11 +220,6 @@
     <uiIconScale>0.5</uiIconScale>
     <surfaceType>Item</surfaceType>
     <comps>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>ToolCabinet</li>
-        </linkableFacilities>
-      </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>40.0</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
@@ -256,12 +246,12 @@
         <resetSemiautomaticIcon>UI/EM_ResetClay</resetSemiautomaticIcon>
         <chooseIngredientsIcon>UI/EM_ClayEmpty</chooseIngredientsIcon>
 
-        <bringIngredientsText>SM_StartInsertionMeat</bringIngredientsText>
-        <bringIngredientsDesc>SM_StartInsertionMeatDesc</bringIngredientsDesc>
+        <bringIngredientsText>SM_StartInsertionMaterial</bringIngredientsText>
+        <bringIngredientsDesc>SM_StartInsertionMaterialDesc</bringIngredientsDesc>
         <bringIngredientsIcon>UI/EM_InsertClay</bringIngredientsIcon>
 
-        <cancelIngredientsText>SM_CancelBringingMeat</cancelIngredientsText>
-        <cancelIngredientsDesc>SM_CancelBringingMeatDesc</cancelIngredientsDesc>
+        <cancelIngredientsText>SM_CancelBringingMaterial</cancelIngredientsText>
+        <cancelIngredientsDesc>SM_CancelBringingMaterialDesc</cancelIngredientsDesc>
         <cancelIngredientsIcon>UI/EM_CancelClay</cancelIngredientsIcon>
 
         <noPowerDestroysProgress>false</noPowerDestroysProgress>
