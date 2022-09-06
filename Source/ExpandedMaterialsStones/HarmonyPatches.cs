@@ -36,7 +36,7 @@ namespace ExpandedMaterialsStones
 
     [HarmonyPatch(typeof(GenRecipe))]
     [HarmonyPatch(nameof(GenRecipe.MakeRecipeProducts))]
-    class Patch_YieldingProducts
+     class Patch_YieldingProducts
     {
         // Calling a local private function
         private static Func<Thing, RecipeDef, Pawn, Precept_ThingStyle, Thing> postProcessProduct =
