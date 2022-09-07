@@ -10,10 +10,9 @@
 
     <!-- Clay amounts per chunk -->
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationAddModExtension">
         <xpath>/Defs/ThingDef [defName = "ChunkGranite"]</xpath>
         <value>
-            <modExtensions>
                 <li Class="ExpandedMaterialsStones.ThingDefExtension">
                     <resources>
                         <li>EM_Clay</li>
@@ -24,14 +23,12 @@
                         <li>20</li>
                     </amount>
                 </li>
-            </modExtensions>
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationAddModExtension">
         <xpath>/Defs/ThingDef [defName = "ChunkSlate"]</xpath>
         <value>
-            <modExtensions>
                 <li Class="ExpandedMaterialsStones.ThingDefExtension">
                     <resources>
                         <li>EM_Clay</li>
@@ -42,14 +39,12 @@
                         <li>20</li>
                     </amount>
                 </li>
-            </modExtensions>
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationAddModExtension">
         <xpath>/Defs/ThingDef [defName = "ChunkMarble"]</xpath>
         <value>
-            <modExtensions>
                 <li Class="ExpandedMaterialsStones.ThingDefExtension">
                     <resources>
                         <li>EM_Clay</li>
@@ -60,14 +55,12 @@
                         <li>20</li>
                     </amount>
                 </li>
-            </modExtensions>
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationAddModExtension">
         <xpath>/Defs/ThingDef [defName = "ChunkSandstone"]</xpath>
         <value>
-            <modExtensions>
                 <li Class="ExpandedMaterialsStones.ThingDefExtension">
                     <resources>
                         <li>EM_Clay</li>
@@ -78,14 +71,12 @@
                         <li>40</li>
                     </amount>
                 </li>
-            </modExtensions>
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationAddModExtension">
         <xpath>/Defs/ThingDef [defName = "ChunkLimestone"]</xpath>
         <value>
-            <modExtensions>
                 <li Class="ExpandedMaterialsStones.ThingDefExtension">
                     <resources>
                         <li>EM_Clay</li>
@@ -96,7 +87,6 @@
                         <li>60</li>
                     </amount>
                 </li>
-            </modExtensions>
         </value>
     </Operation>
 
